@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+        <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
+        <title></title>
+    </head>
+    <body>
+        <div class="jumbotron"><center><h1>CIVIC TEST</h1></center>
+        </div>
+        <h1>Parlement et citoyens</h1><p><a href="https://www.parlement-et-citoyens.fr/">voir le site web</a>
+        <div class="container-fluid">
+          <div id="quiz"></div>
+        </div>
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <script src="js/tabletop.js" type="text/javascript"></script>
+            <script src="js/script.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+                var questions = [
+                                    {
+                                        possible_answers: [
+                                            {
+                                                answer: 'Open Source',
+                                                correct: false,
+                                                text: 'Faux! Allez, voir la charte pour connaitre les avantages des logiciels open source pour les application civic tech',
+                                                title: 'Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)',
+                                            },
+                                            {
+                                                answer: 'Propri&eacute;taire',
+                                                correct: true,
+                                                text: 'Correct! Allez, voir la charte pour connaitre les avantages des logiciels open source pour les application civic tech',
+                                                title: "Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)",
+                                            }
+                                        ],
+                                        question: {
+                                            title: 'Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)',
+                                        }
+
+                                    },
+
+                                ]
+                                ;
+                  var quiz = jQuery('#quiz').quiz(questions);
+            </script>
+
+    </body>
+</html>

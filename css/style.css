@@ -76,7 +76,7 @@ img, .youtube {
     height: 100%;
     width: 100%;
 }
-.member {
+.outil {
   display: inline-block;
   width: 150px ;
   margin: 0 auto ;
@@ -88,4 +88,19 @@ img, .youtube {
 }
 .name {
   font-weight: 400 ;
+}
+.btn-xs {
+  float: right;
+}
+.quiz {
+  padding-right: 300px;
+  padding-left: 300px;
+}
+#decisionflow {
+  width: 1200px;
+  height: 528px;
+}
+.charte{
+  padding-right: 150px;
+  padding-left: 150px;
 }

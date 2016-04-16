@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+        <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
+        <title></title>
+    </head>
+    <body>
+        <div class="jumbotron"><center><h1>CIVIC TEST</h1></center>
+        </div>
+        <h1>DemocracyOS</h1><p><a href="http://democracyos.eu">voir le site web</a>  
+        <div class="container-fluid">
+          <div id="quiz"></div>
+        </div>
+            <script src="js/jquery.js" type="text/javascript"></script>
+            <script src="js/tabletop.js" type="text/javascript"></script>
+            <script src="js/script.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+                var questions = [
+                                    {
+                                        possible_answers: [
+                                            {
+                                                answer: 'Open Source',
+                                                correct: true,
+                                                text: 'Correct! Voici le lien vers le code : https://github.com/DemocracyOS/democracyos ',
+                                                title: 'Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)',
+                                            },
+                                            {
+                                                answer: 'Propri&eacute;taire',
+                                                correct: false,
+                                                text: 'Faux! Allez, voir la charte pour connaitre les avantages des logiciels open source pour les application civic tech',
+                                                title: "Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)",
+                                            }
+                                        ],
+                                        question: {
+                                            title: 'Cet outil est-il open source? (dont le code est public consultable, r&eacute;plicable et modifiable par tous)',
+                                        }
+
+                                    },
+                                    {
+                                        possible_answers: [
+                                            {
+                                                answer: 'Copy Left',
+                                                correct: true,
+                                                text: 'Correct! La licence utilis&eacute;e par DemocracyOS est #typeLicence',
+                                                title: 'Sous quelle licence est-il d&eacute;pos&eacute; ?',
+                                            },
+                                            {
+                                                answer: 'Non Copy Left',
+                                                correct: false,
+                                                title: 'Sous quelle licence est-il d&eacute;pos&eacute; ?',
+                                                text: 'Faux! DemocracyOS est d&eacute;pos&eacute; sous la licence #typeLicence. Une licence type copy left',
+                                            }
+                                        ],
+                                        question: {
+                                            title: 'Sous quelle licence est-il d&eacute;pos&eacute; ?',
+                                        }
+
+                                    },
+                                    {
+                                        possible_answers: [
+                                            {
+                                                answer: 'Oui',
+                                                correct: true,
+                                                text: 'Correct! DemocracyOS a &eacute;t&eacute; fork&eacute; X fois',
+                                                title: 'Son d&eacute;veloppement repose-t-il sur une communaut&eacute; ? (Un certain nombre de d&eacute;veloppeurs contribue au code)',
+                                            },
+                                            {
+                                                answer: 'Non',
+                                                correct: false,
+                                                title: 'Son d&eacute;veloppement repose-t-il sur une communaut&eacute; ? (Un certain nombre de d&eacute;veloppeurs contribue au code)',
+                                                text: 'Faux! DemocracyOS a &eacute;t&eacute; fork&eacute; X fois',
+                                            }
+                                        ],
+                                        question: {
+                                            title: 'Son d&eacute;veloppement repose-t-il sur une communaut&eacute; ? (Un certain nombre de d&eacute;veloppeurs contribue au code)' ,
+                                        }
+
+                                    }
+
+                                ]
+                                ;
+                  var quiz = jQuery('#quiz').quiz(questions);
+            </script>
+
+    </body>
+</html>
