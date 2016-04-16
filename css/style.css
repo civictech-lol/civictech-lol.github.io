@@ -76,3 +76,16 @@ img, .youtube {
     height: 100%;
     width: 100%;
 }
+.member {
+  display: inline-block;
+  width: 150px ;
+  margin: 0 auto ;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 15px ;
+}
+.name {
+  font-weight: 400 ;
+}
