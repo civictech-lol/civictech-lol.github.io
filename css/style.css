@@ -115,3 +115,10 @@ p{
 h1{
   padding-left: 23px;
 }
+.imageheader{
+  display: block;
+  max-width: 50%;
+ height: auto;
+margin: auto;
+padding-bottom: 50px;
+}
