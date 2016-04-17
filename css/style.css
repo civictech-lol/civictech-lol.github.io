@@ -46,7 +46,7 @@
 
 /*multimedia styling*/
 
-img, .youtube {
+.youtube img {
 	margin-bottom: 1em;
 	min-height: 200px;
 	max-height: 200px;
