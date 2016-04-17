@@ -3,11 +3,14 @@
   margin: 0 auto;
 }
 .possible_answer  {
-    padding: .75em;
+    background: #A6DDF2;
+    padding: 9px 12px 7px;
+    border-width: 0 1px 4px 1px;
+    text-transform: uppercase;
 }
 
 .possible_answer:hover {
-	background: rgba(254, 231, 88, 1);
+	background: #75CAEB;
 	cursor: pointer;
     font-weight: bold;
 }
@@ -57,7 +60,7 @@ img, .youtube {
 }
 
 .question img, .revealed_answer img, .selected img, .correct-answer img, .wrong-answer img {
-    max-height: 24em;
+    max-height: 50em;
     display: block;
 }
 
