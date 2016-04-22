@@ -49,7 +49,7 @@
 
 /*multimedia styling*/
 
-.youtube img {
+img, .youtube {
 	margin-bottom: 1em;
 	min-height: 200px;
 	max-height: 200px;
@@ -60,7 +60,7 @@
 }
 
 .question img, .revealed_answer img, .selected img, .correct-answer img, .wrong-answer img {
-    max-height: 50em;
+    max-height: 24em;
     display: block;
 }
 
@@ -110,18 +110,4 @@
 #quiz{
   padding-right: 200px;
   padding-left: 200px;
-}
-p{
-  padding-left: 23px;
-  padding-right: 23px;
-}
-h1{
-  padding-left: 23px;
-}
-.imageheader{
-  display: block;
-  max-width: 50%;
- height: auto;
-margin: auto;
-padding-bottom: 50px;
 }
